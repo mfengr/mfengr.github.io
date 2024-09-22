@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+
+        <ul class="sidebar">
+            <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
+                        fill="#5f6368">
+                        <path
+                            d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+
+        <ul>
+            <li><a href="index.html">Coding2go</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="products.html">Products</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="forum.html">Forum</a></li>
+            <li class="hideOnMobile"><a href="login.html">Login</a></li>
+            <li class="menu-button" onclick=showSideBar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960"
+                        width="26" fill="#5f6368">
+                        <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
