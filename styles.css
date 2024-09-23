@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
 }
 
 nav {
