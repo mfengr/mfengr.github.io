@@ -7,3 +7,31 @@ document.addEventListener(‘DOMContentLoaded’, () => {
     eve.appendChild(button);
   }
 });
+
+function toggleFavorite(event) {
+    const tagName = event.target;
+    if (tagName.nodeName === 'BUTTON') 
+    {
+        event.preventDefault();
+        if (tagName.textContent.startsWith('Add')) 
+        {
+            tagName.textContent = 'Remove from favorites';
+            const fav = document.createElement('p');
+            fav.textContent = '⭐ ⭐ ⭐ ';
+            tagName.parentElement.appendChild(fav);
+        } else {
+            tagName.textContent = 'Add to favorites';
+            if (tagName.nextSibling) 
+            {
+                tagName.nextSibling.remove();
+            }
+        }
+    }
+}
+
+const ndsContainer = document.querySelector('.list-nanodegrees');
+if (ndsContainer) {
+    ndsContainer.addEventListener('click', toggleFavorite);
+}
+});
+
