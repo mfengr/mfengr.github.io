@@ -1,5 +1,5 @@
-document.addEventListener(‘DOMContentLoaded’, () => {
-  const newList = document.querySelectorAll(‘.card--nanodegree__title’);
+document.addEventListener('DOMContentLoaded', function () {
+     const newList = document.querySelectorAll(‘.card--nanodegree__title’);
   newList.forEach(function (eve) {
     const button = document.createElement('button');
     button.textContent = 'Add to Favorites';
@@ -7,6 +7,7 @@ document.addEventListener(‘DOMContentLoaded’, () => {
     eve.appendChild(button);
   }
 });
+ 
 
 function toggleFavorite(event) {
     const tagName = event.target;
