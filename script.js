@@ -10,3 +10,4 @@ for(i=0;i<degreeTitles.length;i++){
      degreeTitles[i].appendChild(button);
 }
 
+
