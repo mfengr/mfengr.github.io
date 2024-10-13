@@ -8,12 +8,6 @@ for(let i=0;i<degreeTitles.length;i++){
      button.classList = 'button button--primary';
      button.textContent = 'Add to Favorites';
      const text = 'button_'+(i+1);
-     button.setAttribute.id = text;
+     button.id = text;
      degreeTitles[i].appendChild(button);
 }
-
-
-
-
-
-
