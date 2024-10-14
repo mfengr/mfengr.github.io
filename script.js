@@ -1,15 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-   const newList = document.querySelectorAll('.card--nanodegree__title');
-   newList.forEach(function (eve) {
+    const newList = document.querySelectorAll('.card--nanodegree__title');
+    newList.forEach(function (eve) {
         const button = document.createElement("button");
         button.textContent = "Add to Favorites";
         button.classList.add("button", "button--primary");
         eve.appendChild(button);
-   
-});
-});
 
-function toggleFavorite(event) {
+    });
+
+    function toggleFavorite(event) {
         const tagName = event.target;
         if (tagName.nodeName === "BUTTON") {
             event.preventDefault();
@@ -27,8 +26,8 @@ function toggleFavorite(event) {
         }
     }
 
-const ndsContainer = document.querySelector('.list-nanodegrees');
-if (ndsContainer) {
-    ndsContainer.addEventListener('click', toggleFavorite);
-}
+    const ndsContainer = document.querySelector('.list-nanodegrees');
+    if (ndsContainer) {
+        ndsContainer.addEventListener('click', toggleFavorite);
+    }
 });
