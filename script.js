@@ -5,5 +5,5 @@ document.addEventListener("DOMContentLoaded", function () {
         button.textContent = "Add to Favorites";
         button.classList.add("button", "button--primary");
         eve.appendChild(button);
-   }
+   });
 });
